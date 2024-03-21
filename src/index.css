@@ -14,3 +14,9 @@ textarea{
 .ml-custom{
     margin-left: 100px;
 }
+
+.custom-form{
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 20px;
+}
