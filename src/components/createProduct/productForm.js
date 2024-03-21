@@ -4,7 +4,7 @@ import React, {useState} from "react"
 
 
 
-function ProductForm(){
+function ProductForm(props){
 
     let [pName,updateName] = useState("")
     let [pPrice,updatePrice] = useState("")
@@ -42,13 +42,15 @@ function ProductForm(){
         image: pImageUrl,
         price: Number(pPrice)
         }
+
         updateName("")
         updatePrice("")
         updateDescription("")
-        updateAvailble("")
+        updateAvailble(false)
         updateImageUrl("")
-        
-        console.log(product)
+
+        props.createProduct(product)
+
     }
 
 
