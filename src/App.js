@@ -57,8 +57,10 @@ const products = [
 
 function App() {
     let [newProduct,updateNewProduct] = useState(products)
+    
 
     function createProductData(product) {
+        product.pID = newProduct.length + 1;
         updateNewProduct([product,...newProduct])
     }
     return (

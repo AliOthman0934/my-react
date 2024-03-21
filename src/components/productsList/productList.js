@@ -10,6 +10,7 @@ function ProductList(props) {
             <ul className="list-group shadow">
                 {props.newProduct.map((product) => {
                     return (<Products
+                        key={product.pID}
                         id={product.pID}
                         name={product.pName}
                         description={product.desc}
