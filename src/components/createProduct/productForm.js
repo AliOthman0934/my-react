@@ -50,6 +50,7 @@ function ProductForm(props){
         updateImageUrl("")
 
         props.createProduct(product)
+        props.onCancel();
 
     }
 
@@ -102,6 +103,7 @@ function ProductForm(props){
         
 
         <button type="submit" className="btn btn-primary">Add Product</button>
+        <button type="button" onClick={props.onCancel} className="btn btn-primary">Cancel</button>
     </form>
     )
 }
