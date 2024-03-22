@@ -55,7 +55,7 @@ function ProductForm(props){
 
 
     return(
-        <form className="row g-3" onSubmit={createProductEventHandler}>
+        <form className="row g-4 custom-form" onSubmit={createProductEventHandler}>
         <div className="col-md-6">
             <label for="name">Product Name</label>
             <input type="text" 
